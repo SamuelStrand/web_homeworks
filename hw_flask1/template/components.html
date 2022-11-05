@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+    {% block title %}
+    Title
+    {% endblock title %}
+    </title>
+
+</head>
+<body>
+    {% block navbar %}
+    <h1 align="center">Hey, this is a navbar!</h1>
+    <div style="overflow:hidden; display:flex; justify-content: space-between;">
+        <a href="/">Main page</a>
+        <a href="/about">About</a>
+        <a href="#">Buy</a>
+        <a href="#">Chat</a>
+        <a href="#">Watch</a>
+    </div>
+    <hr>
+
+    {% block body %} {% endblock body %}
+
+    {% endblock navbar %}
+
+    {% block footer %}
+        <div style="padding-top:300px">
+            <hr>
+            <div style="display:flex"></div>
+            <h1 align="center">This is a footer</h1>
+            <span>Here is some information about us!</span>
+            <span style="padding-left:1550px">Contact us!</span>
+            <h2 align="center"> More information</h2>
+        </div>
+    {% endblock footer %}
+
+
+
+
+</body>
+</html>
